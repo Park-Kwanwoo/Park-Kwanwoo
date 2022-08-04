@@ -14,6 +14,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: vn7n24fzkq/github-profile-summary-cards@release        
         env:          
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:          
           USERNAME: Park-Kwanwoo
