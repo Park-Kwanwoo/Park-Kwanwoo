@@ -1,18 +1,19 @@
 name: GitHub-Profile-Summary-Cards
-  on:
-    schedule: # execute every 24 hours
-      - cron: '* */24 * * *'
-    workflow_dispatch:
+
+on:
+  schedule: # execute every 24 hours
+    - cron: '* */24 * * *'
+  workflow_dispatch:
     
 jobs:
   build:
     runs-on: ubuntu-latest
-     name: generate
+    name: generate
 
-     steps:
+    steps:
       - uses: actions/checkout@v2
       - uses: vn7n24fzkq/github-profile-summary-cards@release        
-      env:          
-        GITHUB_TOKEN: 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
-      with:          
-        USERNAME: Park-Kwanwoo
+        env:          
+          GITHUB_TOKEN: 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
+        with:          
+          USERNAME: Park-Kwanwoo
